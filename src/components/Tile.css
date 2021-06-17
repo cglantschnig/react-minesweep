@@ -1,0 +1,6 @@
+.tile {
+  background-color: var(--bg-tile);
+  border: 1px solid;
+  display: grid;
+  place-items: center;
+}

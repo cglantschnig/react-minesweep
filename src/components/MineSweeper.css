@@ -1,0 +1,38 @@
+:root {
+  --grid-size: 10;
+  --bg-tile: rgb(151, 151, 151);
+}
+
+.minesweeper {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+  margin-top: 5vh;
+  height: 90vh;
+  aspect-ratio: 1/1;
+  border: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner {
+  position: absolute;
+  height: 20vh;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em;
+  line-height: 20vh;
+  text-align: center;
+}
+
+.lost-banner {
+  background-color: red;
+  color: white;
+}
+
+.won-banner {
+  background-color: green;
+  color: white;
+}
