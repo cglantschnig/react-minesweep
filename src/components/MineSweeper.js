@@ -107,11 +107,11 @@ function hasWon(grid) {
     (tile.status === TILE_STATUSES.HIDDEN && tile.mine)));
 }
 
-export default function MineSweeper() {
+export default function MineSweeper({ gridSize = 10, bombCount = 5 }) {
   const [{ won, lost, grid }, dispatch] = useReducer(reducer, {
     won: false,
     lost: false,
-    grid: buildGrid(10, 3)
+    grid: buildGrid(gridSize, bombCount)
   });
   
   function clickMarkTile(x, y) {

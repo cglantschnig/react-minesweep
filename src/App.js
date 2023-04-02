@@ -3,7 +3,7 @@ import MineSweeper from './components/MineSweeper';
 function App() {
   return (
     <div className="App">
-      <MineSweeper />
+      <MineSweeper bombCount={8} gridSize={10} />
     </div>
   );
 }
